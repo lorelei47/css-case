@@ -1,0 +1,87 @@
+@mixin flexBox($center) {
+  $center: center;
+  display: flex;
+  justify-content: center;
+  align-items: $center;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  @include flexBox(center);
+  background: #00a2a2;
+  .clock {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    @include flexBox(center);
+    position: relative;
+    box-shadow: 0 -1rem 1rem rgba(255, 255, 255, 0.05),
+      inset 0 -1rem 1rem rgba(255, 255, 255, 0.05),
+      0 -1rem 1rem rgba(0, 0, 0, 0.3), inset 0 -1rem 1rem rgba(0, 0, 0, 0.3);
+    &::before {
+      content: "";
+      position: absolute;
+      height: 90px;
+      width: 90px;
+      border: 2px solid #111;
+      border-radius: 50%;
+      background: #36b0ea;
+    }
+    .hour {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      @include flexBox(start);
+      &::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 12px;
+        border-radius: 6px;
+        top: 0;
+        background: red;
+      }
+    }
+    .min {
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      @include flexBox(start);
+      &::before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 12px;
+        border-radius: 5px;
+        top: 0;
+        background: #000;
+      }
+    }
+    .sec {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      @include flexBox(start);
+      &::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-radius: 3.5px;
+        top: 0;
+        background: #000;
+      }
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

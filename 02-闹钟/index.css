@@ -1,0 +1,135 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #00a2a2;
+}
+
+body .clock {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  -webkit-box-shadow: 0 -1rem 1rem rgba(255, 255, 255, 0.05),
+    inset 0 -1rem 1rem rgba(255, 255, 255, 0.05),
+    0 -1rem 1rem rgba(0, 0, 0, 0.3), inset 0 -1rem 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -1rem 1rem rgba(255, 255, 255, 0.05),
+    inset 0 -1rem 1rem rgba(255, 255, 255, 0.05),
+    0 -1rem 1rem rgba(0, 0, 0, 0.3), inset 0 -1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+body .clock::before {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  border: 2px solid #111;
+  border-radius: 50%;
+  background: #36b0ea;
+}
+
+body .clock .hour {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .clock .hour::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  border-radius: 6px;
+  top: 0;
+  background: red;
+}
+
+body .clock .min {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .clock .min::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 12px;
+  border-radius: 5px;
+  top: 0;
+  background: #000;
+}
+
+body .clock .sec {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body .clock .sec::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  top: 0;
+  background: #000;
+}
+
+body .clock img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=index.css.map */
