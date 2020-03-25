@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+body div {
+  position: relative;
+  display: inline-block;
+  color: #daa516;
+  padding: 15px 20px;
+  font-size: 24px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+body div:hover {
+  background-color: #daa516;
+  color: #121212;
+  -webkit-box-shadow: 0 0 5px #daa516, 0 0 20px #daa516, 0 0 50px #daa516, 0 0 150px #daa516;
+          box-shadow: 0 0 5px #daa516, 0 0 20px #daa516, 0 0 50px #daa516, 0 0 150px #daa516;
+}
+/*# sourceMappingURL=index.css.map */

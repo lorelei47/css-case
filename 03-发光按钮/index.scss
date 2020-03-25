@@ -1,0 +1,31 @@
+$bgColor: #121212;
+$textColor: #daa516;
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $bgColor;
+    div {
+        position: relative;
+        display: inline-block;
+        color: $textColor;
+        padding: 15px 20px;
+        font-size: 24px;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        cursor: pointer;
+        user-select: none;
+        -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+        &:hover {
+            background-color: $textColor;
+            color: $bgColor;
+            box-shadow: 0 0 5px $textColor, 0 0 20px $textColor, 0 0 50px $textColor, 0 0 150px $textColor;
+        }
+    }
+}
