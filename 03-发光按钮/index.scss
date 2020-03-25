@@ -18,6 +18,8 @@ body {
         font-size: 24px;
         transition: 0.5s;
         letter-spacing: 4px;
+        border: 2px solid $textColor;
+        font-weight: bold;
         text-transform: uppercase;
         cursor: pointer;
         user-select: none;

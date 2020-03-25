@@ -25,6 +25,8 @@ body div {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 4px;
+  border: 2px solid #daa516;
+  font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
   -webkit-user-select: none;
