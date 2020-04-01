@@ -6,6 +6,6 @@
 
 * **2020-3-27**	04-炫光加载器--->[预览](https://codepen.io/lorelei47/pen/mdJarJj)
 
-* **2020-3-29**	05-手风琴菜单--->[预览](https://codepen.io/lorelei47/pen/KKpbLEQ)06-橡皮筋效果
+* **2020-3-29**	05-手风琴菜单--->[预览](https://codepen.io/lorelei47/pen/KKpbLEQ)
 
 * **2020-4-1**	06-橡皮筋效果--->[预览](https://codepen.io/lorelei47/pen/PoqLvZV)
