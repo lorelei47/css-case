@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/*
+ * @Author: lorelei.rongzihao 
+ * @Date: 2020-04-01 23:32:15 
+ * @Last Modified by: lorelei.rongzihao
+ * @Last Modified time: 2020-04-01 23:44:28
+ * @transform: scale3d(x,y,z)接受三个无单位参数，表示在该空间上的x，y，z倍
+ */
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #121211;
+}
+
+body h1.text {
+  color: #fff;
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+body h1.text:hover {
+  -webkit-animation: rubberBand 1.2s;
+          animation: rubberBand 1.2s;
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3d(1.5, 0.5, 1);
+            transform: scale3d(1.5, 0.5, 1);
+  }
+  45% {
+    -webkit-transform: scale3d(0.5, 1.5, 1);
+            transform: scale3d(0.5, 1.5, 1);
+  }
+  60% {
+    -webkit-transform: scale3d(1.3, 0.7, 1);
+            transform: scale3d(1.3, 0.7, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3d(1.5, 0.5, 1);
+            transform: scale3d(1.5, 0.5, 1);
+  }
+  45% {
+    -webkit-transform: scale3d(0.5, 1.5, 1);
+            transform: scale3d(0.5, 1.5, 1);
+  }
+  60% {
+    -webkit-transform: scale3d(1.3, 0.7, 1);
+            transform: scale3d(1.3, 0.7, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+/*# sourceMappingURL=style.css.map */
