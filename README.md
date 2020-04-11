@@ -11,3 +11,5 @@
 * **2020-4-1**	06-橡皮筋效果--->[预览](https://codepen.io/lorelei47/pen/PoqLvZV)
 
 * **2020-4-8**	07-闪动文字效果--->[预览](https://codepen.io/lorelei47/pen/rNOBqzR)
+
+* **2020-4-11**	08.UI悬停设计效果--->[预览](https://codepen.io/lorelei47/pen/qBOEQad)
