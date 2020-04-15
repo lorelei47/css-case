@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #191919;
+        label {
+            position: relative;
+            width: 200px;
+            height: 80px;
+            cursor: pointer;
+            margin: 20px 0;
+            input {
+                opacity: 0;
+                &:checked~ {
+                    .check::before {
+                        background: #101010;
+                        box-shadow: none;
+                    }
+                    .check::after {
+                        background: green;
+                        box-shadow: 0 0 5px green, 0 0 10px green, 0 0 20px green, 0 0 40px green;
+                    }
+                    .btn {
+                        left: 50%;
+                    }
+                }
+            }
+            .check {
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+                width: 100%;
+                height: 100%;
+                background: #101010;
+                border-radius: 40px;
+                box-shadow: 0 0 0 4px #101010;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: calc(50% - 4px);
+                    left: -30px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50px;
+                    background: red;
+                    transition: .5s;
+                    box-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red, 0 0 40px red;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: calc(50% - 4px);
+                    right: -30px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50px;
+                    background: #101010;
+                    box-shadow: none;
+                    transition: .5s;
+                }
+            }
+            .btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+                height: 80px;
+                border-radius: 40px;
+                background-color: #333;
+                transition: .5s;
+                box-shadow: inset 0 -20px 15px #292929, inset 0 20px 15px #292929;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 45px;
+                    height: 80px;
+                    background-color: #252525;
+                    border-top-left-radius: 80px;
+                    border-bottom-left-radius: 80px;
+                    box-shadow: inset -5px -5px 15px rgba($color: #000000, $alpha: .3);
+                    filter: blur(2px);
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 45px;
+                    height: 80px;
+                    background-color: #252525;
+                    border-top-right-radius: 80px;
+                    border-bottom-right-radius: 80px;
+                    box-shadow: inset -5px -5px 15px rgba($color: #000000, $alpha: .3);
+                    filter: blur(2px);
+                }
+            }
+        }
+    }
+}
