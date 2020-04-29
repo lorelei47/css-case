@@ -18,4 +18,6 @@
 
 * **2020-4-15**	10.开关按钮--->[预览](https://codepen.io/lorelei47/pen/LYpGPoX)
 
-* **2020-4-15**	11.鼠标附着式按钮边框效果--->[预览](https://codepen.io/lorelei47/pen/QWjEYVR)
+* **2020-4-19**	11.鼠标附着式按钮边框效果--->[预览](https://codepen.io/lorelei47/pen/QWjEYVR)
+
+* **2020-4-29**	12.里程表计数器--->[预览](https://codepen.io/lorelei47/pen/ExVvWZa)
